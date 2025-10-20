@@ -1,197 +1,234 @@
-<div id="wrap" class="oe_structure oe_empty">
-    <section class="s_cta_mockups o_colored_level pt0 pb0 s_parallax_no_overflow_hidden bg-white"
-        data-snippet="s_cta_mockups" data-name="Prototipos de llamada a la acción" data-scroll-background-ratio="0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Integración MercadoLibre y Odoo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        /* Paleta de colores */
+        :root {
+            --color-primario: #FEA912;
+            --color-secundario: #B1D3C2;
+            --color-terciario: #E9E5DF;
+        }
+
+        body{
+            font-family: "Fredoka", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        h1, h2, h3{
+            font-weight: 600!important; 
+        }
+
+        p{
+            font-size:  1.2rem!important; 
+        }
+
+        /* Sección de Logo */
+        .logo-section {
+            padding: 20px;
+            background-color: var(--color-secundario);
+            text-align: center;
+        }
+
+        .logo-section img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .logo-section p {
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        /* Sección Hero */
+        .hero-section {
+            padding: 80px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: var(--color-terciario);
+            width: 100%;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .hero-section p {
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Botón de Acción */
+        .btn-primary {
+            background-color: var(--color-primario);
+            border: none;
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-size: 1.2rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #f39c12;
+        }
+
+        /* Sección de Cards */
+        .cards-section {
+            padding: 60px 0;
+            background-color: var(--color-terciario);
+        }
+
+        .cards-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .card-body {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .card-body p{
+            line-height: 1.1;
+        }
+
+        .card {
+            margin-bottom: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            border-style: none;
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+            background-color: var(--color-terciario);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        /* Sección de Call to Action */
+        .cta-section {
+            padding: 60px 0;
+            background-color: var(--color-secundario);
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* Ajuste en las columnas de los videos */
+        .col-md-4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card-body iframe {
+            border-radius: 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sección de Logo -->
+    <section class="logo-section">
+        <div>
+            <img src="https://www.odumbo.com/web/image/1474153-f821b1de/isotipo%20%282%29.webp" style="max-width: 85px;" alt="odumbo">
+        </div>
+        <div>
+            <img src="https://www.odumbo.com/web/image/website/19/logo/Odumbo?unique=ea8936f" style="max-width: 200px;" alt="odumbo">
+        </div>
+    </section>
+
+    <!-- Sección 1: Hero -->
+    <section class="hero-section align-items-center">
         <div class="container">
-            <div class="row o_grid_mode" data-row-count="7">
-
-                <div class="o_grid_item o_colored_level g-col-lg-9 g-height-4 col-lg-9"
-                    style="grid-area: 2 / 1 / 6 / 10; z-index: 2;">
-                    <h3><span class="display-4-fs">
-                            <font class="text-black">Odoo + Mercado Libre.</font>
-                        </span></h3>
-                    <p class="lead"><span class="h5-fs">Sincroniza tus Precios, Stock y Ventas de Mercado Libre vía API,
-                            sin modificar tu ​Odoo.</span></p>
-                    <span class="o_small-fs">​</span><a class="btn btn-fill-custom text-o-color-5 rounded-circle"
-                        href="http://www.odumbo.com"
-                        style="border-width: 1px; border-style: solid; background-color: rgb(254, 169, 18);"><strong>TEST
-                            FREE</strong></a>​​​​​​
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Integra MercadoLibre con Odoo</h1>
+                    <p>Sincroniza tus Ventas, Precios, Stock de Mercado Libre, sin necesidad de instalar nada dentro de tu ​Odoo.</p>
+                    <a href="https://www.odumbo.com/web/signup" target="_blank" class="btn btn-primary">Iniciar prueba gratis</a>
                 </div>
-
-                <div class="o_grid_item o_grid_item_image o_snippet_mobile_invisible d-none d-lg-block o_colored_level g-height-6 g-col-lg-3 col-lg-3"
-                    style="z-index: 3; grid-area: 2 / 10 / 8 / 13;" data-invisible="1">
-                    <img src="ipad.jpeg"
-                        class="img img-fluid o_animate o_anim_slide_in o_anim_from_right o_animate_both_scroll o_visible"
-                        data-shape="web_editor/devices/ipad_3d_portrait_02" data-original-mimetype="image/jpeg"
-                        data-file-name="s_cta_mockups_1.svg" alt="" loading="eager" data-mimetype="image/svg+xml"
-                        data-original-id="1124"
-                        data-original-src="/website/static/src/img/snippets_demo/s_cta_mockups_1.jpg"
-                        data-mimetype-before-conversion="image/jpeg" data-shape-colors=";;;;#E48B25" data-width="376"
-                        data-height="813" data-scale-x="1" data-scale-y="1" data-aspect-ratio="0/0" data-quality="77"
-                        style="" />
+                <div class="col-md-6 text-center">
+                    <img src="https://www.odumbo.com/web/image/1479293-27449b34/Screenshot%202025-10-20%2012.38.04.webp" alt="Integración MercadoLibre Odoo">
                 </div>
-                <div class="o_grid_item o_grid_item_image o_colored_level g-height-4 g-col-lg-3 col-lg-3"
-                    style="z-index: 4; grid-area: 1 / 9 / 5 / 12;"><img
-                        src="mercadolibre.png" alt=""
-                        class="img img-fluid o_we_custom_image o_animate o_anim_slide_in o_anim_from_left o_animate_both_scroll o_visible"
-                        data-mimetype="image/svg+xml" data-original-id="2319"
-                        data-original-src="/web/image/2319-397f6357/ede4b264-b309-4223-86e1-e237fb2ed067.png"
-                        data-mimetype-before-conversion="image/png" data-width="475" data-height="475" data-scale-x="1"
-                        data-scale-y="1" data-aspect-ratio="0/0" data-shape="web_editor/geometric/geo_square_1"
-                        data-file-name="ede4b264-b309-4223-86e1-e237fb2ed067.svg" data-shape-colors=";;;;"
-                        data-original-mimetype="image/png" style="width: 100% !important;" loading="eager" /></div>
             </div>
         </div>
     </section>
 
-    <section class="s_cards_soft pt48 o_colored_level s_parallax_no_overflow_hidden o_cc o_cc1 pb16"
-        data-snippet="s_cards_soft" data-name="Cards Soft" style="position: relative;" data-scroll-background-ratio="0">
+    <!-- Sección 2: Cards con Videos -->
+    <section class="cards-section">
         <div class="container">
-            <div class="row s_nb_column_fixed o_grid_mode" data-row-count="11">
-                <div class="o_grid_item g-height-3 g-col-lg-12 col-lg-12"
-                    style="grid-area: 1 / 1 / 4 / 13; z-index: 1;">
-                    <h3 style="text-align: center;"><span class="h1-fs">¿Cómo funciona?</span></h3>
-                    <p class="lead" style="text-align: center;"><span class="h5-fs">¡Mirá estos tres videos y lo
-                            entenderás muy fácilmente! No te llevará más de 15 minutos.</span><br /></p>
-                </div>
-                <div data-name="Card"
-                    class="o_grid_item g-col-lg-4 g-height-9 col-lg-4 o_animate o_animate_on_scroll o_anim_zoom_in"
-                    style="grid-area: 3 / 1 / 12 / 5; z-index: 2; animation-delay: -0.390905s;"
-                    data-scroll-zone-start="0" data-scroll-zone-end="100">
-                    <div class="s_card card o_colored_level o_cc o_cc2" data-vxml="001" data-snippet="s_card"
-                        data-name="Card"
-                        style="background-color: rgb(254, 169, 18); position: relative; border-width: 0px !important;"
-                        data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Wavy/19&quot;,&quot;flip&quot;:[],&quot;showOnMobile&quot;:false,&quot;shapeAnimationSpeed&quot;:&quot;0&quot;}">
-                        <div class="o_we_shape o_web_editor_Wavy_19" style="" />
+            <h2 class="text-center">¿Cómo funciona?</h2>
+            <p class="text-center mb-5">¡Mirá estos tres videos y lo entenderás muy fácilmente! No te llevará más de 15 minutos.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;"><span class="h4-fs">
-                                    <font class="text-o-color-4">​Sincronización de Ventas</font>
-                                </span></h5>
-                            <p class="card-text" style="text-align: center;"><span style="font-size: 1.125rem;">
-                                    <font class="text-o-color-4"><strong>La venta viajará desde Mercado Li​bre en forma
-                                            de Sales Order a tu App de Ventas</strong></font>
-                                </span>
-                                <font class="text-o-color-4"><strong>.</strong></font>
-                                <font class="text-black"><strong><br /></strong><br /></font>
-                            </p>
-                            <div data-oe-expression="//player.vimeo.com/video/1113019916?autoplay=0"
-                                class="media_iframe_video">
-                                <div class="css_editable_mode_display" />
-                                <div class="media_iframe_video_size" />
-                                <iframe loading="lazy" frameborder="0" allowfullscreen="allowfullscreen"
-                                    src="//player.vimeo.com/video/1113019916?autoplay=0" />
-                            </div>
+                            <h5 class="card-title">Sincronización de Ventas</h5>
+                            <p>La venta viajará desde Mercado Li​bre en forma de Sales Order a tu App de Ventas.</p>
+                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/1113019916?h=886b7f8795" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-                <div data-name="Card"
-                    class="o_grid_item g-col-lg-4 g-height-8 col-lg-4 o_animate o_animate_on_scroll o_anim_zoom_in"
-                    style="grid-area: 3 / 5 / 11 / 9; z-index: 3; animation-delay: -0.390905s;"
-                    data-scroll-zone-start="0" data-scroll-zone-end="100">
-                    <div class="s_card card o_colored_level o_cc o_cc2" data-vxml="001" data-snippet="s_card"
-                        data-name="Card"
-                        style="background-color: rgb(254, 169, 18); border-width: 0px !important; position: relative;"
-                        data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Blobs/07&quot;,&quot;flip&quot;:[],&quot;showOnMobile&quot;:false,&quot;shapeAnimationSpeed&quot;:&quot;0&quot;}">
-                        <div class="o_we_shape o_web_editor_Blobs_07" style="" />
+                <div class="col-md-4">
+                    <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title" style="text-align: center;"><span class="h4-fs">
-                                    <font class="text-o-color-4">Sincronización de Stock</font>
-                                </span></h5>
-                            <p class="card-text" style="text-align: center;"><span style="font-size: 1.125rem;">
-                                    <font class="text-o-color-4">Tu Stock viaja de Odoo a MeLi cada vez que compres, y
-                                        viajará de MeLi a Odoo cada vez que vendas.</font>
-                                </span></p>
-                            <div data-oe-expression="//player.vimeo.com/video/1113059720?autoplay=0"
-                                class="media_iframe_video">
-                                <div class="css_editable_mode_display" />
-                                <div class="media_iframe_video_size" />
-                                <iframe loading="lazy" frameborder="0" allowfullscreen="allowfullscreen"
-                                    src="//player.vimeo.com/video/1113059720?autoplay=0" />
-                            </div>
+                            <h5 class="card-title">Sincronización de Stock</h5>
+                            <p>La venta viajará desde Mercado Li​bre en forma de Sales Order a tu App de Ventas.</p>
+                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/1113059720?h=e8a558f1cb" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
-
-                <div data-name="Card"
-                    class="o_grid_item g-col-lg-4 g-height-9 col-lg-4 o_animate o_animate_on_scroll o_anim_zoom_in"
-                    style="z-index: 5; grid-area: 3 / 9 / 12 / 13; animation-delay: -0.390905s;"
-                    data-scroll-zone-start="0" data-scroll-zone-end="100">
-                    <div class="s_card card o_colored_level o_cc o_cc2" data-vxml="001" data-snippet="s_card"
-                        data-name="Card"
-                        style="background-color: rgb(254, 169, 18); border-width: 0px !important; position: relative;"
-                        data-oe-shape-data="{&quot;shape&quot;:&quot;web_editor/Wavy/18&quot;,&quot;flip&quot;:[],&quot;showOnMobile&quot;:false,&quot;shapeAnimationSpeed&quot;:&quot;0&quot;}">
-                        <div class="o_we_shape o_web_editor_Wavy_18" style="" />
+                <div class="col-md-4">
+                    <div class="card">
                         <div class="card-body">
-                            <h5 style="text-align: center;" class="card-title"><span class="h4-fs">
-                                    <font class="text-o-color-4">Sincronización de Precios</font>
-                                </span></h5>
-                            <p class="card-text" style="text-align: center;"><span style="font-size: 1.125rem;">
-                                    <font class="text-o-color-4"><strong>Actualiza los Precios en Odoo y Odumbo lo
-                                            modifica&amp;nbsp;en tus publicaciones de Meli.</strong></font>
-                                    <font class="text-black"><br /><br /></font>
-                                </span></p>
-                            <div data-oe-expression="//player.vimeo.com/video/1113024820?autoplay=0"
-                                class="media_iframe_video">
-                                <div class="css_editable_mode_display" />
-                                <div class="media_iframe_video_size" />
-                                <iframe loading="lazy" frameborder="0" allowfullscreen="allowfullscreen"
-                                    src="//player.vimeo.com/video/1113024820?autoplay=0" />
-                            </div>
+                            <h5 class="card-title">Sincronización de Precios</h5>
+                            <p>La venta viajará desde Mercado Li​bre en forma de Sales Order a tu App de Ventas.</p>
+                            <iframe title="vimeo-player" src="https://player.vimeo.com/video/1113024820?h=f1266456ec" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section
-        class="s_process_steps s_process_steps_connector_line o_colored_level s_parallax_no_overflow_hidden bg-white pt16 pb0"
-        data-vcss="002" data-vxml="002" data-snippet="s_process_steps" data-name="Steps"
-        data-scroll-background-ratio="0">
-        <svg class="s_process_step_svg_defs position-absolute">
-            <defs>
-                <marker class="s_process_steps_arrow_head" markerwidth="15" markerheight="10" refx="6" refy="6"
-                    orient="auto">
-                    <path d="M 2,2 L10,6 L2,10 L6,6 L2,2" vector-effect="non-scaling-size" />
-                </marker>
-            </defs>
-        </svg>
-        <div class="container-fluid">
-            <h2 class="mb-4 text-center h3-fs"><span class="display-4-fs">¿Cómo obtener&amp;nbsp;Odumbo?</span></h2>
-            <h5 style="text-align: center;"><a
-                    class="btn btn-fill-custom text-o-color-4 bg-o-color-2 rounded-circle btn-lg o_anim_fade_in o_animate o_animate_both_scroll o_anim_from_top"
-                    href="https://www.odumbo.com/#comienza-ahora" style="border-width: 1px; border-style: solid;"
-                    target="_blank"><span class="h3-fs"><strong>Completá e​l for​​​​mulario </strong></span><span
-                        style="font-size: 1.75rem;" /><span class="h3-fs"><strong>aquí!</strong></span></a></h5>
-            <div class="row g-0">
-                <div class="s_process_step position-relative pb24 o_colored_level col-lg-12 pt0">
-                    <svg class="s_process_step_connector position-absolute z-index-1" viewbox="0 0 267.25 80"
-                        preserveaspectratio="none"
-                        style="left: calc(50% + 56px); height: 80px; width: calc(100% - 112px);">
-                        <path d="M 0 40 L 267.25 40" vector-effect="non-scaling-stroke" />
-                    </svg>
 
-                    <div class="s_process_step_content mt-3 px-3 text-center">
-                        <h3 class="h4-fs"><span
-                                style="font-family: Chillax-Variable, &quot;Odoo Unicode Support Noto&quot;, sans-serif; font-weight: 400;"
-                                class="h5-fs">Dejanos tus datos y te contactamos por Whatsapp o correo electrónico para
-                                brindarte información.</span></h3>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <!-- Sección 3: Call to Action -->
+    <section class="cta-section">
+        <h2>¡Inicia ahora tu prueba gratis!</h2>
+        <p>Haciendo click en el siguiente botón vas a poder utilizar nuestro integrador <strong>gratis durante 10 días.</strong> No te pediremos ningún dato de tu tarjeta!<br>
+            Si luego de los 10 días querés seguir utilizando nuestra plataforma, deberás ingresar tu tarjeta de crédito/débito y comenzarás a abonar tu suscripción mensual.</p>
+        <a href="https://www.odumbo.com/web/signup" target="_blank" class="btn btn-primary shadow">Iniciar prueba gratis</a>
     </section>
 
-
-
-
-
-
-    <section class="s_title o_colored_level pt32 pb48" data-vcss="001" data-snippet="s_title" data-name="Título">
-        <div class="container s_allow_columns">
-            <h3 style="text-align: center;">
-                <span class="h3-fs">Tu plan será a tu medida.&amp;nbsp;<br />Si vendes más, pagas más y si vendes menos,
-                    pagas menos!​&amp;nbsp;</span><br />
-            </h3>
-        </div>
-    </section>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
