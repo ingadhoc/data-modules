@@ -12,191 +12,79 @@
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
     rel="stylesheet"
   />
-  <style>
-    /* Paleta de colores */
-    :root {
-      --color-primario: #fea912;
-      --color-secundario: #b1d3c2;
-      --color-terciario: #e9e5df;
-    }
-
-    body {
-      font-family: "Fredoka", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 300;
-      font-style: normal;
-      font-variation-settings: "wdth" 100;
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-weight: 600 !important;
-    }
-
-    p {
-      font-size: 1.2rem !important;
-    }
-
-    /* Sección de Logo */
-    .logo-section {
-      padding: 20px;
-      background-color: var(--color-secundario);
-      text-align: center;
-    }
-
-    .logo-section img {
-      max-width: 200px;
-      margin-bottom: 20px;
-    }
-
-    .logo-section p {
-      font-size: 1.2rem;
-      color: #6c757d;
-      margin-bottom: 20px;
-    }
-
-    /* Sección Hero */
-    .hero-section {
-      padding: 80px 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      background-color: var(--color-terciario);
-      width: 100%;
-    }
-
-    .hero-section h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .hero-section p {
-      margin-bottom: 30px;
-      color: #333;
-    }
-
-    .hero-section img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* Botón de Acción */
-    .btn-primary {
-      background-color: var(--color-primario);
-      border: none;
-      border-radius: 30px;
-      padding: 10px 30px;
-      font-size: 1.2rem;
-    }
-
-    .btn-primary:hover {
-      background-color: #f39c12;
-    }
-
-    /* Sección de Cards */
-    .cards-section {
-      padding: 60px 0;
-      background-color: var(--color-terciario);
-    }
-
-    .cards-section h2 {
-      font-size: 2.5rem;
-      color: #333;
-    }
-
-    .card-body {
-      text-align: center;
-      padding: 30px;
-    }
-
-    .card-body p {
-      line-height: 1.1;
-    }
-
-    .card {
-      margin-bottom: 30px;
-      border-radius: 15px;
-      overflow: hidden;
-      border-style: none;
-      box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
-      background-color: var(--color-terciario);
-    }
-
-    .card-title {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      color: #333;
-    }
-
-    /* Sección de Call to Action */
-    .cta-section {
-      padding: 60px 0;
-      background-color: var(--color-secundario);
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      width: 100%;
-    }
-
-    .cta-section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .cta-section p {
-      font-size: 1.2rem;
-      margin-top: 20px;
-      color: #333;
-    }
-
-    /* Ajuste en las columnas de los videos */
-    .col-md-4 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .card-body iframe {
-      border-radius: 15px;
-      width: 100%;
-    }
-  </style>
 </head>
 
-<body>
+<body
+  style="
+    font-family: 'Fredoka', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: 'wdth' 100;
+  "
+>
   <!-- Sección de Logo -->
-  <section class="logo-section">
+  <section style="padding: 20px; background-color: #b1d3c2; text-align: center">
     <div>
       <img
         src="https://www.odumbo.com/web/image/1474153-f821b1de/isotipo%20%282%29.webp"
-        style="max-width: 85px"
+        style="max-width: 85px; margin-bottom: 20px"
         alt="odumbo"
       />
     </div>
     <div>
       <img
         src="https://www.odumbo.com/web/image/website/19/logo/Odumbo?unique=ea8936f"
-        style="max-width: 200px"
+        style="max-width: 200px; margin-bottom: 20px"
         alt="odumbo"
       />
     </div>
   </section>
 
   <!-- Sección 1: Hero -->
-  <section class="hero-section align-items-center">
+  <section
+    style="
+      padding: 80px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #e9e5df;
+      width: 100%;
+    "
+    class="align-items-center"
+  >
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1>Integra MercadoLibre con Odoo</h1>
-          <p>
+          <h1
+            style="
+              font-weight: 600 !important;
+              font-size: 3rem;
+              margin-bottom: 20px;
+              color: #333;
+            "
+          >
+            Integra MercadoLibre con Odoo
+          </h1>
+          <p
+            style="
+              font-size: 1.2rem !important;
+              margin-bottom: 30px;
+              color: #333;
+            "
+          >
             Sincroniza tus Ventas, Precios, Stock de Mercado Libre, sin
             necesidad de instalar nada dentro de tu ​Odoo.
           </p>
           <a
             href="https://www.youtube.com/watch?v=Kcye9yHu4rY&ab_channel=KsolvesIndiaLimited"
             target="_blank"
-            class="btn btn-primary"
+            style="
+              background-color: #fea912;
+              border: none;
+              border-radius: 30px;
+              padding: 10px 30px;
+              font-size: 1.2rem;
+            "
+            class="btn"
             >Iniciar prueba gratis</a
           >
           <a
@@ -225,6 +113,7 @@
           <img
             src="https://www.odumbo.com/web/image/1479293-27449b34/Screenshot%202025-10-20%2012.38.04.webp"
             alt="Integración MercadoLibre Odoo"
+            style="max-width: 100%; height: auto"
           />
         </div>
       </div>
@@ -232,19 +121,45 @@
   </section>
 
   <!-- Sección 2: Cards con Videos -->
-  <section class="cards-section">
+  <section style="padding: 60px 0; background-color: #e9e5df">
     <div class="container">
-      <h2 class="text-center">¿Cómo funciona?</h2>
-      <p class="text-center mb-5">
+      <h2
+        style="font-weight: 600 !important; font-size: 2.5rem; color: #333"
+        class="text-center"
+      >
+        ¿Cómo funciona?
+      </h2>
+      <p style="font-size: 1.2rem !important" class="text-center mb-5">
         ¡Mirá estos tres videos y lo entenderás muy fácilmente! No te llevará
         más de 15 minutos.
       </p>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Sincronización de Ventas</h5>
-              <p>
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+          class="col-md-4"
+        >
+          <div
+            style="
+              margin-bottom: 30px;
+              border-radius: 15px;
+              overflow: hidden;
+              border-style: none;
+              box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+              background-color: #e9e5df;
+            "
+          >
+            <div style="text-align: center; padding: 30px">
+              <h5
+                style="
+                  font-weight: 600 !important;
+                  font-size: 1.5rem;
+                  margin-bottom: 15px;
+                  color: #333;
+                "
+              >
+                Sincronización de Ventas
+              </h5>
+              <p style="font-size: 1.2rem !important; line-height: 1.1">
                 La venta viajará desde Mercado Li​bre en forma de Sales Order a
                 tu App de Ventas.
               </p>
@@ -255,15 +170,37 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                 allowfullscreen
+                style="border-radius: 15px; width: 100%"
               ></iframe>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Sincronización de Stock</h5>
-              <p>
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+          class="col-md-4"
+        >
+          <div
+            style="
+              margin-bottom: 30px;
+              border-radius: 15px;
+              overflow: hidden;
+              border-style: none;
+              box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+              background-color: #e9e5df;
+            "
+          >
+            <div style="text-align: center; padding: 30px">
+              <h5
+                style="
+                  font-weight: 600 !important;
+                  font-size: 1.5rem;
+                  margin-bottom: 15px;
+                  color: #333;
+                "
+              >
+                Sincronización de Stock
+              </h5>
+              <p style="font-size: 1.2rem !important; line-height: 1.1">
                 La venta viajará desde Mercado Li​bre en forma de Sales Order a
                 tu App de Ventas.
               </p>
@@ -274,15 +211,37 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                 allowfullscreen
+                style="border-radius: 15px; width: 100%"
               ></iframe>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Sincronización de Precios</h5>
-              <p>
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+          class="col-md-4"
+        >
+          <div
+            style="
+              margin-bottom: 30px;
+              border-radius: 15px;
+              overflow: hidden;
+              border-style: none;
+              box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+              background-color: #e9e5df;
+            "
+          >
+            <div style="text-align: center; padding: 30px">
+              <h5
+                style="
+                  font-weight: 600 !important;
+                  font-size: 1.5rem;
+                  margin-bottom: 15px;
+                  color: #333;
+                "
+              >
+                Sincronización de Precios
+              </h5>
+              <p style="font-size: 1.2rem !important; line-height: 1.1">
                 La venta viajará desde Mercado Li​bre en forma de Sales Order a
                 tu App de Ventas.
               </p>
@@ -293,6 +252,7 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                 allowfullscreen
+                style="border-radius: 15px; width: 100%"
               ></iframe>
             </div>
           </div>
@@ -302,9 +262,27 @@
   </section>
 
   <!-- Sección 3: Call to Action -->
-  <section class="cta-section">
-    <h2>¡Inicia ahora tu prueba gratis!</h2>
-    <p>
+  <section
+    style="
+      padding: 60px 0;
+      background-color: #b1d3c2;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+    "
+  >
+    <h2
+      style="
+        font-weight: 600 !important;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #333;
+      "
+    >
+      ¡Inicia ahora tu prueba gratis!
+    </h2>
+    <p style="font-size: 1.2rem !important; margin-top: 20px; color: #333">
       Haciendo click en el siguiente botón vas a poder utilizar nuestro
       integrador <strong>gratis durante 10 días.</strong> No te pediremos ningún
       dato de tu tarjeta!<br />
@@ -315,7 +293,14 @@
     <a
       href="https://www.odumbo.com/web/signup"
       target="_blank"
-      class="btn btn-primary shadow"
+      style="
+        background-color: #fea912;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 30px;
+        font-size: 1.2rem;
+      "
+      class="btn shadow"
       >Iniciar prueba gratis</a
     >
   </section>
