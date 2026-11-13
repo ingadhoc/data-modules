@@ -8,8 +8,8 @@
     """,
     'author': 'Adhoc S.A.',
     'website': 'https://www.odumbo.com/r/qz6',
-    'version': "18.0.1.0.0",
-    'images':  ['static/description/portada.png'],
+    'version': "18.0.1.0.1",
+    'images':  ['static/description/portada.gif'],
     'depends': [],
     'data': [
     ],

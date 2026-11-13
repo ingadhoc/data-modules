@@ -1,357 +1,114 @@
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page - Integración MercadoLibre y Odoo</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
-    rel="stylesheet"
-  />
-</head>
+<!--
+  Descripci&#243;n del m&#243;dulo &#171;odumbo&#187; en la tienda de apps de Odoo (static/description/index.html) &#8212; v13.
+  Corta y en espa&#241;ol neutro, para quien ya usa Odoo y busca la integraci&#243;n con Mercado Libre. Dise&#241;o: lenguaje de adhoc.inc/comercializadoras-new con la paleta de Odumbo.
+  Reglas de la tienda: solo links a YouTube (la direcci&#243;n de odumbo.com va escrita, sin link), estilos dentro del c&#243;digo, Bootstrap lo carga la tienda.
+  Im&#225;genes en static/description/img/: capturas reales de la integraci&#243;n de prueba y de la cuenta demo; logos oficiales de Mercado Libre y Odoo, sin fondo.
+-->
+<div class="oe_styling_v8" style="background-color:#E9E5DF; color:#191919; font-family:'Apercu Pro','Varta','Segoe UI',system-ui,sans-serif">
 
-<body
-  style="
-    font-family: 'Fredoka', sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings: 'wdth' 100;
-  "
->
-  <!-- Sección de Logo -->
-  <section style="padding: 20px; background-color: #b1d3c2; text-align: center">
-    <div>
-      <img
-        src="https://www.odumbo.com/web/image/1474153-f821b1de/isotipo%20%282%29.webp"
-        style="max-width: 85px; margin-bottom: 20px"
-        alt="odumbo"
-      />
-    </div>
-    <div>
-      <img
-        src="https://www.odumbo.com/web/image/website/19/logo/Odumbo?unique=ea8936f"
-        style="max-width: 200px; margin-bottom: 20px"
-        alt="odumbo"
-      />
+  <section style="padding:24px 20px 0; text-align:center; background-color:#F5EBE0"><img src="https://www.odumbo.com/web/image/website/19/logo/Odumbo?unique=ea8936f" alt="Odumbo" style="height:40px"></section>
+
+  <!-- PORTADA -->
+  <section style="padding:40px 20px 56px; background-color:#F5EBE0">
+    <div class="container"><div class="row align-items-center">
+      <div class="col-lg-6 text-center text-lg-start" style="margin-bottom:32px">
+        <h1 style="font-family:'New Kansas','Fraunces',Georgia,serif; font-weight:400 !important; font-size:3.2rem; line-height:1.08; margin-bottom:20px">Integra Odoo con Mercado Libre, <b style="font-weight:700; text-decoration:underline; text-decoration-color:#FEA912; text-decoration-thickness:6px; text-underline-offset:10px">sin instalar nada.</b></h1>
+        <p style="font-size:1.25rem !important; font-weight:500; margin-bottom:26px">Cada venta entra a tu Odoo con el cliente, el env&#237;o y la etiqueta. El stock, los precios y la factura vuelven solos a Mercado Libre.</p>
+        <a href="https://www.youtube.com/watch?v=DPmZFH_m_tE" target="_blank" style="display:inline-block; background-color:#FEA912; color:#191919; font-weight:800; font-size:1.2rem; border:2px solid #191919; border-radius:999px; padding:14px 34px; text-decoration:none; box-shadow:4px 4px 0 #191919">Mira c&#243;mo probarlo gratis</a>
+        <p style="margin:16px 0 0; color:#2D2D2D; font-weight:500">10 d&#237;as gratis, sin tarjeta. Crea tu cuenta en <b style="font-weight:800">odumbo.com</b></p>
+      </div>
+      <div class="col-lg-6">
+        <div style="display:flex; align-items:center; justify-content:center; margin-bottom:22px"><img src="img/ml-emblema.png" alt="Mercado Libre" style="margin-right:26px; height:92px"><span style="margin-right:26px; font-weight:900; font-size:2.4rem !important; color:#905C01">&#8644;</span><img src="img/odoo-color.png" alt="Odoo" style="height:70px"></div>
+        <img src="img/hero-integracion.png" alt="Pedido de Odoo creado por Odumbo desde una venta de Mercado Libre, con el cliente y la l&#237;nea de env&#237;o" style="width:100%; display:block">
+        <p style="color:#726B60; font-size:.8rem !important; margin-top:6px; text-align:center">Pantalla real de Odumbo, en una cuenta de prueba</p>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- LO QUE QUIERES SABER PRIMERO -->
+  <section style="padding:40px 20px; background-color:#191919; border-radius:0 0 40px 40px">
+    <div class="container" style="max-width:1040px"><div class="row">
+      <div class="col-md-6 col-lg-3" style="margin-bottom:12px"><div style="border:2px solid #3A3733; border-radius:20px; padding:20px; height:100%"><b style="display:block; font-size:1.15rem; font-weight:800; color:#FEA912; margin-bottom:10px">Odoo 16 a 20</b><div style="color:#F5EBE0"><div style="display:flex; align-items:center; margin-bottom:8px"><span style="margin-right:10px; flex:none; width:22px; min-width:22px; height:22px; border-radius:50%; background-color:#FEA912; color:#191919; font-weight:900; text-align:center; line-height:22px; font-size:.85rem">&#10003;</span><span>Odoo Online</span></div><div style="display:flex; align-items:center; margin-bottom:8px"><span style="margin-right:10px; flex:none; width:22px; min-width:22px; height:22px; border-radius:50%; background-color:#FEA912; color:#191919; font-weight:900; text-align:center; line-height:22px; font-size:.85rem">&#10003;</span><span>Odoo.sh</span></div><div style="display:flex; align-items:center; margin-bottom:8px"><span style="margin-right:10px; flex:none; width:22px; min-width:22px; height:22px; border-radius:50%; background-color:#FEA912; color:#191919; font-weight:900; text-align:center; line-height:22px; font-size:.85rem">&#10003;</span><span>Servidor propio</span></div></div></div></div>
+      <div class="col-md-6 col-lg-3" style="margin-bottom:12px"><div style="border:2px solid #3A3733; border-radius:20px; padding:20px; height:100%"><b style="display:block; font-size:1.15rem; font-weight:800; color:#FEA912; margin-bottom:10px">Sin instalar m&#243;dulos</b><div style="color:#F5EBE0"><span>Se conecta por API, con cuatro datos de tu Odoo.</span></div></div></div>
+      <div class="col-md-6 col-lg-3" style="margin-bottom:12px"><div style="border:2px solid #3A3733; border-radius:20px; padding:20px; height:100%"><b style="display:block; font-size:1.15rem; font-weight:800; color:#FEA912; margin-bottom:10px">Funciona en</b><div style="color:#F5EBE0"><div style="display:flex; align-items:center; margin-bottom:8px"><img src="img/bandera-ar.png" alt="Bandera de Argentina" style="margin-right:10px; height:22px; width:auto; border-radius:3px"><span>Argentina</span></div><div style="display:flex; align-items:center; margin-bottom:8px"><img src="img/bandera-mx.png" alt="Bandera de M&#233;xico" style="margin-right:10px; height:22px; width:auto; border-radius:3px"><span>M&#233;xico</span></div><div style="display:flex; align-items:center; margin-bottom:8px"><img src="img/bandera-cl.png" alt="Bandera de Chile" style="margin-right:10px; height:22px; width:auto; border-radius:3px"><span>Chile</span></div><div style="display:flex; align-items:center; margin-bottom:8px"><img src="img/bandera-uy.png" alt="Bandera de Uruguay" style="margin-right:10px; height:22px; width:auto; border-radius:3px"><span>Uruguay</span></div></div></div></div>
+      <div class="col-md-6 col-lg-3" style="margin-bottom:12px"><div style="border:2px solid #3A3733; border-radius:20px; padding:20px; height:100%"><b style="display:block; font-size:1.15rem; font-weight:800; color:#FEA912; margin-bottom:10px">+100 empresas</b><div style="color:#F5EBE0"><span>ya sincronizan sus ventas con Odumbo.</span></div></div></div>
+    </div></div>
+  </section>
+
+  <!-- QU&#201; PASA CON CADA VENTA -->
+  <section style="padding:64px 20px; background-color:#E9E5DF">
+    <div class="container" style="max-width:1080px">
+      <h2 style="font-family:'New Kansas','Fraunces',Georgia,serif; font-weight:400 !important; font-size:2.6rem; line-height:1.12; text-align:center; margin-bottom:10px">Qu&#233; pasa con <b style="font-weight:700">cada venta.</b></h2>
+      <p style="text-align:center; font-size:1.15rem !important; color:#2D2D2D; margin-bottom:34px">Del pedido en Mercado Libre a la factura, sin cargar nada a mano.</p>
+      <div class="row">
+        <div class="col-md-6" style="margin-bottom:20px"><div style="background-color:#FFFFFF; border:2px solid #191919; border-radius:22px; padding:16px; height:100%; box-shadow:4px 4px 0 #191919"><p style="margin:0 0 10px; font-weight:900; color:#905C01">1</p><div style="border-radius:12px; overflow:hidden; border:1px solid #E0DAD0; margin-bottom:12px"><img src="img/paso1-venta.webp" alt="Detalle de una venta en Mercado Libre" style="width:100%; display:block"></div><b style="display:block; font-weight:800; margin-bottom:4px">La venta se hace en Mercado Libre</b><span style="color:#2D2D2D">Sigues vendiendo como siempre.</span></div></div>
+        <div class="col-md-6" style="margin-bottom:20px"><div style="background-color:#FFFFFF; border:2px solid #191919; border-radius:22px; padding:16px; height:100%; box-shadow:4px 4px 0 #191919"><p style="margin:0 0 10px; font-weight:900; color:#905C01">2</p><div style="border-radius:12px; overflow:hidden; border:1px solid #E0DAD0; margin-bottom:12px"><img src="img/paso2-pedido.webp" alt="Pedido de venta en Odoo con el cliente, su direcci&#243;n y la l&#237;nea de env&#237;o" style="width:100%; display:block"></div><b style="display:block; font-weight:800; margin-bottom:4px">Entra a Odoo</b><span style="color:#2D2D2D">Con el cliente y su direcci&#243;n, el producto y la l&#237;nea de env&#237;o, listo para preparar.</span></div></div>
+        <div class="col-md-6" style="margin-bottom:20px"><div style="background-color:#FFFFFF; border:2px solid #191919; border-radius:22px; padding:16px; height:100%; box-shadow:4px 4px 0 #191919"><p style="margin:0 0 10px; font-weight:900; color:#905C01">3</p><div style="border-radius:12px; overflow:hidden; border:1px solid #E0DAD0; margin-bottom:12px"><img src="img/paso3-etiqueta.webp" alt="Etiqueta de env&#237;o en PDF y ZPL dentro de Odoo" style="width:100%; display:block"></div><b style="display:block; font-weight:800; margin-bottom:4px">Sale con su etiqueta</b><span style="color:#2D2D2D">En PDF y en ZPL para impresora t&#233;rmica, adjunta a la entrega.</span></div></div>
+        <div class="col-md-6" style="margin-bottom:20px"><div style="background-color:#FFFFFF; border:2px solid #191919; border-radius:22px; padding:16px; height:100%; box-shadow:4px 4px 0 #191919"><p style="margin:0 0 10px; font-weight:900; color:#905C01">4</p><div style="border-radius:12px; overflow:hidden; border:1px solid #E0DAD0; margin-bottom:12px"><img src="img/paso4-factura.webp" alt="Factura del pedido validada en Odoo" style="width:100%; display:block"></div><b style="display:block; font-weight:800; margin-bottom:4px">La factura vuelve</b><span style="color:#2D2D2D">La validas en Odoo y Odumbo la sube a la venta de Mercado Libre.</span></div></div>
+      </div>
+      <p style="text-align:center; font-weight:700; margin:6px 0 26px">Funciona con Full, Flex, Colecta, Mercado Env&#237;os y publicaciones de cat&#225;logo.</p>
+      <p style="text-align:center; margin:0"><a href="https://www.youtube.com/watch?v=DPmZFH_m_tE" target="_blank" style="display:inline-block; background-color:#FEA912; color:#191919; font-weight:800; font-size:1.2rem; border:2px solid #191919; border-radius:999px; padding:14px 34px; text-decoration:none; box-shadow:4px 4px 0 #191919">Mira c&#243;mo probarlo gratis</a></p>
     </div>
   </section>
 
-  <!-- Sección 1: Hero -->
-  <section
-    style="
-      padding: 80px 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      background-color: #e9e5df;
-      width: 100%;
-    "
-    class="align-items-center"
-  >
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1
-            style="
-              font-weight: 600 !important;
-              font-size: 3rem;
-              margin-bottom: 20px;
-              color: #333;
-            "
-          >
-            Integra MercadoLibre con Odoo
-          </h1>
-          <p
-            style="
-              font-size: 1.2rem !important;
-              margin-bottom: 30px;
-              color: #333;
-            "
-          >
-            Sincroniza tus Ventas, Precios, Stock de Mercado Libre, sin
-            necesidad de instalar nada dentro de tu ​Odoo.
-          </p>
-          <a
-            href="https://www.youtube.com/watch?v=DPmZFH_m_tE"
-            target="_blank"
-            style="
-              background-color: #fea912;
-              border: none;
-              border-radius: 30px;
-              padding: 10px 30px;
-              font-size: 1.2rem;
-            "
-            class="btn"
-            >Iniciar prueba gratis</a
-          >
-        </div>
-        <div class="col-md-6 text-center">
-          <img
-            src="https://www.adhoc.inc/web/image/1489400-34f6842c/Dise%C3%B1o%20sin%20t%C3%ADtulo%20%289%29.webp"
-            alt="Integración MercadoLibre Odoo"
-            style="max-width: 50%; height: auto"
-          />
-        </div>
+  <!-- T&#218; DECIDES QU&#201; SE SINCRONIZA -->
+  <section style="padding:64px 20px 40px; background-color:#B1D3C2; border-radius:44px">
+    <div class="container" style="max-width:1080px">
+      <h2 style="font-family:'New Kansas','Fraunces',Georgia,serif; font-weight:400 !important; font-size:2.6rem; line-height:1.12; text-align:center; margin-bottom:10px">T&#250; decides <b style="font-weight:700">qu&#233; se sincroniza.</b></h2>
+      <p style="text-align:center; font-size:1.15rem !important; margin-bottom:36px">Cada cosa se activa con un interruptor. Con el modo de prueba ves qu&#233; se publicar&#237;a, sin tocar datos reales.</p>
+      <div class="row align-items-center" style="margin-bottom:18px"><div class="col-lg-6" style="margin-bottom:26px"><div style="width:96px; height:96px; border-radius:50%; background-color:#FEA912; text-align:center; padding-top:23px; margin-bottom:14px"><img src="img/ilus-cart.png" alt="Carrito dibujado" style="width:62px; height:50px; display:inline-block"></div><h3 style="font-weight:900; font-size:1.7rem; margin-bottom:2px">Ventas</h3><p style="color:#2D2D2D; margin-bottom:16px">Mercado Libre &#8594; Odoo, y la factura vuelve</p><div style="display:flex; align-items:flex-start; margin-bottom:10px"><span style="margin-right:12px; flex:none; width:24px; min-width:24px; height:24px; border-radius:50%; background-color:#191919; color:#FFFFFF; text-align:center; font-size:.85rem; line-height:24px; font-weight:900">&#10003;</span><span style="font-weight:500">El pedido entra solo, con el cliente y la l&#237;nea de env&#237;o</span></div><div style="display:flex; align-items:flex-start; margin-bottom:10px"><span style="margin-right:12px; flex:none; width:24px; min-width:24px; height:24px; border-radius:50%; background-color:#191919; color:#FFFFFF; text-align:center; font-size:.85rem; line-height:24px; font-weight:900">&#10003;</span><span style="font-weight:500">Etiqueta de env&#237;o adjunta a la entrega</span></div><div style="display:flex; align-items:flex-start; margin-bottom:10px"><span style="margin-right:12px; flex:none; width:24px; min-width:24px; height:24px; border-radius:50%; background-color:#191919; color:#FFFFFF; text-align:center; font-size:.85rem; line-height:24px; font-weight:900">&#10003;</span><span style="font-weight:500">La factura de Odoo vuelve a la venta</span></div><div style="display:flex; align-items:flex-start; margin-bottom:10px"><span style="margin-right:12px; flex:none; width:24px; min-width:24px; height:24px; border-radius:50%; background-color:#191919; color:#FFFFFF; text-align:center; font-size:.85rem; line-height:24px; font-weight:900">&#10003;</span><span style="font-weight:500">Las ventas canceladas tambi&#233;n se reflejan</span></div></div><div class="col-lg-6" style="margin-bottom:26px"><div style="background-color:#FFFFFF; border-radius:22px; overflow:hidden; box-shadow:0 14px 34px rgba(25,25,25,.16); padding:6px"><img src="img/odumbo-sync-ventas.webp" alt="Interruptores de la sincronizaci&#243;n de ventas en Odumbo" style="width:100%; display:block; border-radius:16px"></div></div></div>
+      <div class="row align-items-center" style="margin-bottom:18px"><div class="col-lg-6" style="margin-bottom:26px"><div style="background-color:#FFFFFF; border-radius:22px; overflow:hidden; box-shadow:0 14px 34px rgba(25,25,25,.16); padding:6px"><img src="img/odumbo-sync-stock.webp" alt="Sincronizaci&#243;n de stock y reglas de stock de seguridad en Odumbo" style="width:100%; display:block; border-radius:16px"></div></div><div class="col-lg-6" style="margin-bottom:26px"><div style="width:96px; height:96px; border-radius:50%; background-color:#FEA912; text-align:center; padding-top:21px; margin-bottom:14px"><img src="img/ilus-laptop.png" alt="Notebook dibujada" style="width:62px; height:53px; display:inline-block"></div><h3 style="font-weight:900; font-size:1.7rem; margin-bottom:2px">Stock</h3><p style="color:#2D2D2D; margin-bottom:16px">Odoo &#8594; Mercado Libre</p><div style="display:flex; align-items:flex-start; margin-bottom:10px"><span style="margin-right:12px; flex:none; width:24px; min-width:24px; height:24px; border-radius:50%; background-color:#191919; color:#FFFFFF; text-align:center; font-size:.85rem; line-height:24px; font-weight:900">&#10003;</span><span style="font-weight:500">El stock de Odoo en todas las publicaciones con el mismo SKU</span></div><div style="display:flex; align-items:flex-start; margin-bottom:10px"><span style="margin-right:12px; flex:none; width:24px; min-width:24px; height:24px; border-radius:50%; background-color:#191919; color:#FFFFFF; text-align:center; font-size:.85rem; line-height:24px; font-weight:900">&#10003;</span><span style="font-weight:500">Stock de seguridad por categor&#237;a o por SKU</span></div><div style="display:flex; align-items:flex-start; margin-bottom:10px"><span style="margin-right:12px; flex:none; width:24px; min-width:24px; height:24px; border-radius:50%; background-color:#191919; color:#FFFFFF; text-align:center; font-size:.85rem; line-height:24px; font-weight:900">&#10003;</span><span style="font-weight:500">Uno o varios dep&#243;sitos, y tambi&#233;n Full y Flex</span></div></div></div>
+      <div class="row align-items-center" style="margin-bottom:18px"><div class="col-lg-6" style="margin-bottom:26px"><div style="width:96px; height:96px; border-radius:50%; background-color:#FEA912; text-align:center; padding-top:28px; margin-bottom:14px"><img src="img/ilus-mercado-libre.png" alt="Apret&#243;n de manos dibujado" style="width:62px; height:39px; display:inline-block"></div><h3 style="font-weight:900; font-size:1.7rem; margin-bottom:2px">Precios</h3><p style="color:#2D2D2D; margin-bottom:16px">Odoo &#8594; Mercado Libre</p><div style="display:flex; align-items:flex-start; margin-bottom:10px"><span style="margin-right:12px; flex:none; width:24px; min-width:24px; height:24px; border-radius:50%; background-color:#191919; color:#FFFFFF; text-align:center; font-size:.85rem; line-height:24px; font-weight:900">&#10003;</span><span style="font-weight:500">Tu lista de precios de Odoo, sin tocar cada publicaci&#243;n</span></div><div style="display:flex; align-items:flex-start; margin-bottom:10px"><span style="margin-right:12px; flex:none; width:24px; min-width:24px; height:24px; border-radius:50%; background-color:#191919; color:#FFFFFF; text-align:center; font-size:.85rem; line-height:24px; font-weight:900">&#10003;</span><span style="font-weight:500">Un recargo distinto por cada opci&#243;n de cuotas</span></div><div style="display:flex; align-items:flex-start; margin-bottom:10px"><span style="margin-right:12px; flex:none; width:24px; min-width:24px; height:24px; border-radius:50%; background-color:#191919; color:#FFFFFF; text-align:center; font-size:.85rem; line-height:24px; font-weight:900">&#10003;</span><span style="font-weight:500">Reglas por monto: porcentaje y recargo fijo</span></div></div><div class="col-lg-6" style="margin-bottom:26px"><div style="background-color:#FFFFFF; border-radius:22px; overflow:hidden; box-shadow:0 14px 34px rgba(25,25,25,.16); padding:6px"><img src="img/odumbo-sync-cuotas.webp" alt="Recargo por cuotas sobre la lista de precios en Odumbo" style="width:100%; display:block; border-radius:16px"></div></div></div>
+    </div>
+  </section>
+
+  <!-- COMPARACI&#211;N -->
+  <section style="padding:64px 20px; background-color:#F7F5F3">
+    <div class="container" style="max-width:900px">
+      <h2 style="font-family:'New Kansas','Fraunces',Georgia,serif; font-weight:400 !important; font-size:2.6rem; line-height:1.12; text-align:center; margin-bottom:12px">Un m&#243;dulo que instalas vs. <b style="font-weight:700">Odumbo.</b></h2>
+      <p style="text-align:center; font-size:1.15rem !important; font-weight:500; margin-bottom:30px">Casi todos los conectores de esta tienda se instalan dentro de tu Odoo. Odumbo no.</p>
+      <div style="border-radius:20px; overflow:hidden; border:2px solid #191919; background-color:#FFFFFF; box-shadow:5px 5px 0 #191919">
+        <div class="row" style="margin:0; font-weight:800"><div class="col-4" style="padding:16px; background-color:#E9E5DF"></div><div class="col-4" style="padding:16px; background-color:#E9E5DF; color:#2D2D2D">M&#243;dulo que instalas</div><div class="col-4" style="padding:16px; background-color:#FEA912; color:#191919">Odumbo</div></div>
+        <div class="row" style="margin:0; border-top:1px solid #E0DAD0"><div class="col-4" style="padding:16px; font-weight:800">Odoo Online</div><div class="col-4" style="padding:16px; color:#2D2D2D">No permite m&#243;dulos de terceros</div><div class="col-4" style="padding:16px; background-color:#FFF2DB; font-weight:500">&#10003; Funciona</div></div>
+        <div class="row" style="margin:0; border-top:1px solid #E0DAD0"><div class="col-4" style="padding:16px; font-weight:800">Para empezar</div><div class="col-4" style="padding:16px; color:#2D2D2D">Algunos piden crear una app en MercadoLibre Developers y cargar sus credenciales</div><div class="col-4" style="padding:16px; background-color:#FFF2DB; font-weight:500">&#10003; Creas tu cuenta y conectas con cuatro datos de tu Odoo</div></div>
+        <div class="row" style="margin:0; border-top:1px solid #E0DAD0"><div class="col-4" style="padding:16px; font-weight:800">Si Mercado Libre cambia algo</div><div class="col-4" style="padding:16px; color:#2D2D2D">Depende de qui&#233;n lo mantenga</div><div class="col-4" style="padding:16px; background-color:#FFF2DB; font-weight:500">&#10003; Lo actualizamos nosotros</div></div>
+        <div class="row" style="margin:0; border-top:1px solid #E0DAD0"><div class="col-4" style="padding:16px; font-weight:800">Soporte</div><div class="col-4" style="padding:16px; color:#2D2D2D">Lo da el proveedor del m&#243;dulo</div><div class="col-4" style="padding:16px; background-color:#FFF2DB; font-weight:500">&#10003; Incluido en el plan</div></div>
       </div>
     </div>
   </section>
 
-  <!-- Sección 2: Cards con Videos -->
-  <section style="padding: 60px 0; background-color: #e9e5df">
-    <div class="container">
-      <h2
-        style="font-weight: 600 !important; font-size: 2.5rem; color: #333"
-        class="text-center"
-      >
-        ¿Cómo funciona?
-      </h2>
-      <p style="font-size: 1.2rem !important" class="text-center mb-5">
-        ¡Mirá estos tres videos y lo entenderás muy fácilmente! No te llevará
-        más de 15 minutos.
-      </p>
-      <div class="row">
-        <div
-          style="display: flex; justify-content: center; align-items: center"
-          class="col-md-4"
-        >
-          <div
-            style="
-              margin-bottom: 30px;
-              border-radius: 15px;
-              overflow: hidden;
-              border-style: none;
-              box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
-              background-color: #e9e5df;
-            "
-          >
-            <div style="text-align: center; padding: 30px">
-              <h5
-                style="
-                  font-weight: 600 !important;
-                  font-size: 1.5rem;
-                  margin-bottom: 15px;
-                  color: #333;
-                "
-              >
-                Sincronización de Ventas
-              </h5>
-              <div
-                style="
-                  height: 180px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin-bottom: 15px;
-                "
-              >
-                <img
-                  src="https://www.adhoc.inc/web/image/1489401-d4d391d0/VENTAS.webp"
-                  style="
-                    max-width: 100%;
-                    max-height: 100%;
-                    height: auto;
-                    object-fit: contain;
-                  "
-                />
-              </div>
-              <p style="font-size: 1.2rem !important; line-height: 1.1">
-                La venta viajará desde Mercado Li​bre en forma de Sales Order a
-                tu App de Ventas.
-              </p>
-              <a
-                href="https://www.youtube.com/watch?v=rkIH_FKdfM8"
-                target="_blank"
-                style="
-                  background-color: #fea912;
-                  border: none;
-                  border-radius: 30px;
-                  padding: 10px 30px;
-                  font-size: 1.2rem;
-                "
-                class="btn"
-                >Ver Video</a
-              >
-            </div>
-          </div>
-        </div>
-        <div
-          style="display: flex; justify-content: center; align-items: center"
-          class="col-md-4"
-        >
-          <div
-            style="
-              margin-bottom: 30px;
-              border-radius: 15px;
-              overflow: hidden;
-              border-style: none;
-              box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
-              background-color: #e9e5df;
-            "
-          >
-            <div style="text-align: center; padding: 30px">
-              <h5
-                style="
-                  font-weight: 600 !important;
-                  font-size: 1.5rem;
-                  margin-bottom: 15px;
-                  color: #333;
-                "
-              >
-                Sincronización de Stock
-              </h5>
-              <div
-                style="
-                  height: 180px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin-bottom: 15px;
-                "
-              >
-                <img
-                  src="https://www.adhoc.inc/web/image/1489398-244274db/STOCK.webp"
-                  style="
-                    max-width: 100%;
-                    max-height: 100%;
-                    height: auto;
-                    object-fit: contain;
-                  "
-                />
-              </div>
-              <p style="font-size: 1.2rem !important; line-height: 1.1">
-                Tu Stock viaja de Odoo a MeLi cada vez que compres, y viajará de
-                MeLi a Odoo cada vez que vendas.
-              </p>
-              <a
-                href="https://www.youtube.com/watch?v=kVIpviiQ9G0&feature=youtu.be"
-                target="_blank"
-                style="
-                  background-color: #fea912;
-                  border: none;
-                  border-radius: 30px;
-                  padding: 10px 30px;
-                  font-size: 1.2rem;
-                "
-                class="btn"
-                >Ver Video</a
-              >
-            </div>
-          </div>
-        </div>
-        <div
-          style="display: flex; justify-content: center; align-items: center"
-          class="col-md-4"
-        >
-          <div
-            style="
-              margin-bottom: 30px;
-              border-radius: 15px;
-              overflow: hidden;
-              border-style: none;
-              box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
-              background-color: #e9e5df;
-            "
-          >
-            <div style="text-align: center; padding: 30px">
-              <h5
-                style="
-                  font-weight: 600 !important;
-                  font-size: 1.5rem;
-                  margin-bottom: 15px;
-                  color: #333;
-                "
-              >
-                Sincronización de Precios
-              </h5>
-              <div
-                style="
-                  height: 180px;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  margin-bottom: 15px;
-                "
-              >
-                <img
-                  src="https://www.adhoc.inc/web/image/1489399-2b47a919/PRECIOS.webp"
-                  style="
-                    max-width: 100%;
-                    max-height: 100%;
-                    height: auto;
-                    object-fit: contain;
-                  "
-                />
-              </div>
-              <p style="font-size: 1.2rem !important; line-height: 1.1">
-                Actualiza los Precios en Odoo y Odumbo lo modifica en tus
-                publicaciones de Meli.
-              </p>
-              <a
-                href="https://www.youtube.com/watch?v=FnlwCdh4FC8&feature=youtu.be"
-                target="_blank"
-                style="
-                  background-color: #fea912;
-                  border: none;
-                  border-radius: 30px;
-                  padding: 10px 30px;
-                  font-size: 1.2rem;
-                "
-                class="btn"
-                >Ver Video</a
-              >
-            </div>
-          </div>
-        </div>
+  <!-- PRECIO Y PASOS -->
+  <section style="padding:64px 20px; background-color:#191919; border-radius:44px">
+    <div class="container" style="max-width:980px"><div class="row align-items-center">
+      <div class="col-md-5" style="margin-bottom:26px">
+        <h2 style="font-family:'New Kansas','Fraunces',Georgia,serif; font-weight:400 !important; color:#F5EBE0; font-size:2.4rem; line-height:1.12; margin-bottom:14px">Pagas seg&#250;n <b style="font-weight:700">lo que sincronizas.</b></h2>
+        <p style="color:#F5EBE0; font-size:1.15rem !important; margin-bottom:12px">Empiezas desde <b style="color:#FEA912; font-weight:800">USD 25 al mes</b> por cuenta de Mercado Libre, sin costo de implementaci&#243;n, y <b style="color:#FEA912; font-weight:800">10 d&#237;as gratis</b> para probar.</p>
+        <p style="color:#D9D3CA; margin-bottom:0">Si creces, el plan se ajusta a lo que sincronizas.</p>
       </div>
+      <div class="col-md-7"><div style="background-color:#F7F5F3; border-radius:24px; padding:26px 28px">
+        <p style="font-weight:800; color:#3F7158; margin-bottom:16px">Empiezas en 3 pasos</p>
+        <div style="display:flex; align-items:flex-start; margin-bottom:14px"><span style="margin-right:16px; flex:none; width:40px; min-width:40px; height:40px; border-radius:50%; background-color:#FEA912; color:#191919; border:2px solid #191919; font-weight:900; font-size:1.2rem; line-height:36px; text-align:center">1</span><p style="font-weight:500; margin:0; padding-top:6px">Creas tu cuenta en <b style="font-weight:800">odumbo.com</b>.</p></div>
+        <div style="display:flex; align-items:flex-start; margin-bottom:14px"><span style="margin-right:16px; flex:none; width:40px; min-width:40px; height:40px; border-radius:50%; background-color:#FEA912; color:#191919; border:2px solid #191919; font-weight:900; font-size:1.2rem; line-height:36px; text-align:center">2</span><p style="font-weight:500; margin:0; padding-top:6px">Conectas tu Odoo con cuatro datos de tu propio Odoo.</p></div>
+        <div style="display:flex; align-items:flex-start; margin-bottom:14px"><span style="margin-right:16px; flex:none; width:40px; min-width:40px; height:40px; border-radius:50%; background-color:#FEA912; color:#191919; border:2px solid #191919; font-weight:900; font-size:1.2rem; line-height:36px; text-align:center">3</span><p style="font-weight:500; margin:0; padding-top:6px">Autorizas tu cuenta de Mercado Libre. Con el modo de prueba ves qu&#233; se publicar&#237;a, sin tocar nada.</p></div>
+      </div></div>
+    </div></div>
+  </section>
+
+  <!-- PREGUNTAS -->
+  <section style="padding:64px 20px; background-color:#E9E5DF"><div class="container" style="max-width:820px">
+    <h2 style="font-family:'New Kansas','Fraunces',Georgia,serif; font-weight:400 !important; font-size:2.4rem; line-height:1.12; text-align:center; margin-bottom:26px">Lo que siempre <b style="font-weight:700">nos preguntan.</b></h2>
+    <div style="background-color:#FFFFFF; border-radius:14px; padding:18px 22px; margin-bottom:12px"><b style="font-weight:800">&#191;Es seguro para mi cuenta de Mercado Libre?</b><p style="color:#2D2D2D; margin:6px 0 0">Odumbo se conecta por API, con la autorizaci&#243;n del due&#241;o de la cuenta de Mercado Libre, y no instala nada dentro de tu Odoo.</p></div>
+    <div style="background-color:#FFFFFF; border-radius:14px; padding:18px 22px; margin-bottom:12px"><b style="font-weight:800">&#191;C&#243;mo conecto Odoo con MercadoLibre?</b><p style="color:#2D2D2D; margin:6px 0 0">Con los tres pasos de arriba: creas tu cuenta en odumbo.com, conectas tu Odoo y autorizas tu cuenta de Mercado Libre.</p></div>
+    <div style="background-color:#FFFFFF; border-radius:14px; padding:18px 22px; margin-bottom:0px"><b style="font-weight:800">&#191;Soy partner de Odoo y un cliente me pide la integraci&#243;n, qu&#233; hago?</b><p style="color:#2D2D2D; margin:6px 0 0">Crea tu cuenta en odumbo.com y pru&#233;bala con tu base de prueba. Si necesitas ayuda, cons&#250;ltanos.</p></div>
+  </div></section>
+
+  <!-- CIERRE -->
+  <section style="padding:64px 20px; text-align:center; background-color:#F5EBE0; background-image:linear-gradient(135deg,#B5E1D2 0%,#F5EBE0 50%,#FEDD9B 100%)">
+    <div class="container" style="max-width:760px">
+      <h2 style="font-family:'New Kansas','Fraunces',Georgia,serif; font-weight:400 !important; font-size:2.6rem; line-height:1.12; margin-bottom:12px">Vender m&#225;s <b style="font-weight:700">no tiene que ser m&#225;s trabajo.</b></h2>
+      <p style="font-size:1.2rem !important; font-weight:500; margin-bottom:26px">Pru&#233;balo 10 d&#237;as gratis. Crea tu cuenta en <b style="font-weight:800">odumbo.com</b>.</p>
+      <a href="https://www.youtube.com/watch?v=DPmZFH_m_tE" target="_blank" style="display:inline-block; background-color:#FEA912; color:#191919; font-weight:800; font-size:1.2rem; border:2px solid #191919; border-radius:999px; padding:14px 34px; text-decoration:none; box-shadow:4px 4px 0 #191919">Mira c&#243;mo probarlo gratis</a>
     </div>
   </section>
 
-  <!-- Sección 3: Call to Action -->
-  <section
-    style="
-      padding: 60px 0;
-      background-color: #b1d3c2;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      width: 100%;
-    "
-  >
-    <h2
-      style="
-        font-weight: 600 !important;
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        color: #333;
-      "
-    >
-      ¡Inicia ahora tu prueba gratis!
-    </h2>
-    <p style="font-size: 1.2rem !important; margin-top: 20px; color: #333">
-      Haciendo click en el siguiente botón vas a poder utilizar nuestro
-      integrador <strong>gratis durante 10 días.</strong> No te pediremos ningún
-      dato de tu tarjeta!<br />
-      Si luego de los 10 días querés seguir utilizando nuestra plataforma,
-      deberás ingresar tu tarjeta de crédito/débito y comenzarás a abonar tu
-      suscripción mensual.
-    </p>
-    <a
-      href="https://www.youtube.com/watch?v=DPmZFH_m_tE"
-      target="_blank"
-      style="
-        background-color: #fea912;
-        border: none;
-        border-radius: 30px;
-        padding: 10px 30px;
-        font-size: 1.2rem;
-      "
-      class="btn shadow"
-      >Iniciar prueba gratis</a
-    >
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+</div>
